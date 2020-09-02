@@ -1,0 +1,34 @@
+
+* {
+  margin:0;
+  padding: 0;
+}
+
+/*#background2 {
+  min-height: 100%;
+  background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('img/conifer-1853832_1920.jpg');
+    padding:10px;
+    padding-top: 100px;
+    }*/
+
+#background2 {
+  min-height: 100%;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+#background2 {
+  min-height: 100%;
+  padding: 10px;
+  background-image: none !important;
+  color:black;
+
+ 
+
+}
+
+
+}

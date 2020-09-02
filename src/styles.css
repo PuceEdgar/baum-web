@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(http://fonts.googleapis.com/css?family=Amiko:400,500,600,700,800,300,200);
+
+
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+    height: 100%;
+    
+}
+
+body {
+  font-family: 'Amiko';
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+
+.loader {
+
+   position: absolute;
+  font-size: 24px;
+  line-height: 36px;
+  top: 50%;
+  left: 50%;
+  
+  
+  display: inline-block;
+
+	
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #30dbb0;
+  border-right: 16px solid #30d5db;
+  border-left: 16px solid #30d5db;
+  border-bottom: 16px solid #30dbb0;
+  
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+

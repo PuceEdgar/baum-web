@@ -1,0 +1,116 @@
+
+<!-- english navigation-->
+<div class="row w3-hide-small animated navigation" id="navigationEng">
+	<div class="col-xs-12">
+		<ul class="nav nav-pills">
+			<li routerLinkActive="active"><a class="w3-hover-green animated fadeIn" title="baum korea home" [routerLink]="['/home']">BAUM</a></li>
+			<li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="baum korea info" [routerLink]="['/info']">Info</a></li>
+      
+			
+			<li class="dropdown">
+        	<a class="dropdown-toggle w3-hover-teal animated fadeIn" data-toggle="dropdown" title="baum korea service">Services
+        		<span class="caret"></span></a>
+        		<ul class="dropdown-menu"> 
+          			<li><a class="w3-hover-green" title="baum korea service building" [routerLink]="['/service-building']">Building</a></li>
+                <li><a class="w3-hover-green" title="baum korea service leisure" [routerLink]="['/service-leisure']">Shoes</a></li>
+                <li><a class="w3-hover-green" title="baum korea service Transportation" [routerLink]="['/service-transportation']">Transportation</a></li> 
+                <li><a class="w3-hover-green" title="baum korea service pets" [routerLink]="['/service-pets']">Pets</a></li>                        			
+        		</ul>
+      </li>
+      
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="baum korea products" [routerLink]="['/products']">Products</a></li>
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="baum korea installed" [routerLink]="['/installed']">Installed</a></li>
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="baum korea certificates" [routerLink]="['/certificates']">Certificates</a></li>
+			<!--<li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="baum korea faq" [routerLink]="['/faq']">FAQ</a></li>-->
+			<li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="baum korea contact" [routerLink]="['/contact']">Contact</a></li>
+      <li class="pull-right"><a href="http://blog.naver.com/baumkorea_" target="blank_"><img src="img/main/blog-2.png" class="img-responsive blog"></a></li>
+      <li class="pull-right" id="korean" onclick="showKor();"><a [routerLink]="['/home']">한국어</a></li>
+      
+		</ul>
+	</div>
+</div>
+
+
+
+
+<!-- korean navigation -->
+<div class="row w3-hide-small animated navigation" id="navigationKor">
+  <div class="col-xs-12">
+    <ul class="nav nav-pills">
+      <li routerLinkActive="active"><a class="w3-hover-green animated fadeIn" title="바움" [routerLink]="['/home']">바움</a></li>
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="바움 정보" [routerLink]="['/info-kor']">정보</a></li>
+      
+      
+      <li class="dropdown">
+          <a class="dropdown-toggle w3-hover-teal animated fadeIn" data-toggle="dropdown" title="바움 서비스">서비스
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a class="w3-hover-green" title="바움 서비스 건물" [routerLink]="['/service-building-kor']">건물시공</a></li>
+                <li><a class="w3-hover-green" title="바움 서비스 구두" [routerLink]="['/service-leisure-kor']">신발</a></li>
+                <li><a class="w3-hover-green" title="바움 서비스 차량" [routerLink]="['/service-transportation-kor']">자동차</a></li>
+                <li><a class="w3-hover-green" title="바움 서비스 애완 동물" [routerLink]="['/service-pets-kor']">애완동물</a></li>                
+            </ul>
+      </li>
+      
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="바움 제품" [routerLink]="['/products-kor']">제품</a></li>
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="바움 설치된" [routerLink]="['/installed-kor']">시공사례</a></li>
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="바움 증명서" [routerLink]="['/certificates-kor']">증명서</a></li>
+      <!--<li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="바움 FAQ" [routerLink]="['/faq-kor']">FAQ</a></li>-->
+      <li routerLinkActive="active"><a class="w3-hover-teal animated fadeIn" title="바움 문의" [routerLink]="['/contact-kor']">시공문의</a></li>
+      <li class="pull-right"><a href="http://blog.naver.com/baumkorea_" target="blank_"><img src="img/main/blog-2.png" class="img-responsive blog"></a></li>
+      <li class="pull-right"><a [routerLink]="['/home']" onclick="showEng();">English</a></li>
+
+    </ul>
+  </div>
+</div>
+   
+
+<!-- english small navi -->   
+<div class="w3-hide-medium w3-hide-large smallnav" id="smallnavEng">
+  <ul class="nav nav-pills">
+      
+    <li class="dropdown">
+        <a class="menu">MENU
+        <span class="caret"></span></a>
+          <ul class="smallmenu">
+            <li routerLinkActive="active"><a class="go" title="baum korea home" [routerLink]="['/home']">BAUM</a></li>
+            <li routerLinkActive="active"><a class="go" title="baum korea info" [routerLink]="['/info']">Info</a></li>               
+            <li routerLinkActive="active"><a class="go" title="baum korea service" [routerLink]="['/service']">Service</a></li>
+            <li routerLinkActive="active"><a class="go" title="baum korea products" [routerLink]="['/products']">Products</a></li>
+            <li routerLinkActive="active"><a class="go" title="baum korea installed" [routerLink]="['/installed']">Installed</a></li>
+            <li routerLinkActive="active"><a class="go" title="baum korea certificates" [routerLink]="['/certificates']">Certificates</a></li>
+            <!--<li routerLinkActive="active"><a class="go" title="baum korea faq" [routerLink]="['/faq']">FAQ</a></li>-->
+            <li routerLinkActive="active"><a class="go" title="baum korea contact" [routerLink]="['/contact']">Contact</a></li>
+          </ul>
+    </li>
+      <li class="pull-right"><a href="http://blog.naver.com/baumkorea_" target="blank_"><img src="img/main/blog-2.png" class="img-responsive blog"></a></li>
+      <li class="pull-right" id="korean" onclick="showKorSmall();"><a [routerLink]="['/home']">한국어</a></li>
+     
+  </ul>
+</div>
+
+
+<!-- korean small navi -->
+<div class="w3-hide-medium w3-hide-large smallnav" id="smallnavKor">
+  <ul class="nav nav-pills">
+      
+    <li class="dropdown">
+        <a class="menu">메뉴
+        <span class="caret"></span></a>
+          <ul class="smallmenu">
+            <li routerLinkActive="active"><a class="go" title="바움" [routerLink]="['/home']">바움</a></li>
+            <li routerLinkActive="active"><a class="go" title="바움 정보" [routerLink]="['/info-kor']">정보</a></li>               
+            <li routerLinkActive="active"><a class="go" title="바움 서비스" [routerLink]="['/service-kor']">서비스</a></li>
+            <li routerLinkActive="active"><a class="go" title="바움 제품" [routerLink]="['/products-kor']">제품</a></li>
+            <li routerLinkActive="active"><a class="go" title="바움 증명서" [routerLink]="['/certificates']">증명서</a></li>
+            <li routerLinkActive="active"><a class="go" title="바움 설치된" [routerLink]="['/installed-kor']">시공사례</a></li>
+            <!--<li routerLinkActive="active"><a class="go" title="바움 FAQ" [routerLink]="['/faq-kor']">FAQ</a></li>-->
+            <li routerLinkActive="active"><a class="go" title="바움 문의" [routerLink]="['/contact-kor']">문의</a></li>
+          </ul>
+    </li>
+    <li class="pull-right"><a href="http://blog.naver.com/baumkorea_" target="blank_"><img src="img/main/blog-2.png" class="img-responsive blog"></a></li>
+    <li class="pull-right"><a [routerLink]="['/home']" onclick="showEngSmall();">English</a></li>
+         
+  </ul>
+</div>
+

@@ -1,0 +1,6 @@
+# OKTOMATO ROBOTS.TXT
+User-agent: *
+Disallow: /_lib
+Disallow: /_module
+Disallow: /_oktomato
+Crawl-delay: 60

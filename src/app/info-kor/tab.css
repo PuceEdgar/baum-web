@@ -1,0 +1,19 @@
+.zoomIn {
+ 	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-duration: 1s;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+ }
+
+ .pane {
+ 	margin-top: 50px;
+ }
+
+ #home {
+ 	color: black;
+ }

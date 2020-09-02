@@ -1,14 +1,278 @@
 <!doctype html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
+  <meta name="robots" content="바움">
   <meta charset="utf-8">
-  <title>Baum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="자연에서 만들어진 원료와 기술이 만나 탄생한 브랜드 ‘BAUM[바움]’.">
+  <meta name="keywords" content="바움 BAUM Korea forest phytonchide health aroma hinoki cypress tree">
+  <meta property="fb:app_id" content="1239227356174294">
+  <meta property="og:title" content="BAUM Korea" />
+  <meta property="og:type" content="자연에서 만들어진 원료와 기술이 만나 탄생한 브랜드 ‘BAUM[바움]’." />
+  <meta property="og:url" content="http://www.baumkorea.co.kr" />
+  <meta property="og:description" content="Website">
+  <meta property="og:image" content="http://www.baumkorea.co.kr/img/info2-3.jpg">
+  <title>BAUM Korea</title>
+   
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="animate.css">
+ <link rel="stylesheet" type="text/css" href="styles.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+  .sns {
+    color:black;
+    position:fixed;
+    right:0;
+    margin-top: 80px;
+    z-index: 10;
+    background-color: rgba(11, 112, 82, 0.8);
+    padding: 10px;
+  }
+
+  #sns {
+    display: none;
+   }
+
+   #sns a {
+     background-color: rgba(0,0,0,0) !important;
+   }
+
+
+  .sns:hover  #sns {
+    display: block;
+  }
+
+  .sns:hover {
+    background-color: rgba(0,0,0,0) !important;
+  }
+
+  .png {
+    max-height: 64px;
+  }
+</style>
+
 </head>
 <body>
-  <app-root>Loading...</app-root>
+
+    
+   <!--<div class="sns">
+   <h4>SNS</h4>
+   <div id="sns">
+     <a href="http://blog.naver.com/baumkorea_" target="blank_"><img src="img/main/blog-1.png" class="img-responsive png"></a><br>
+     <a href=""><img src="" class="img-responsive png"></a><br>
+     <a href=""><img src="" class="img-responsive png"></a>
+   </div>
+   </div>-->   
+    
+
+<!-- MAIN APP -->
+  <app-root>
+  	<div class="loader"></div>
+  </app-root>
+
+<script type="text/javascript">
+  
+  function block() {
+    return false;
+  }
+</script>
+
+
+<!-- SCRIPTS -->
+ <script type="text/javascript">
+
+
+ jQuery(document).ready(function($) {
+
+  //toggle menu on small screens
+  $(".menu").click(function(){
+        $(".smallmenu").toggle();
+    });
+
+  //close menu on small screen when wisiting a link
+  $(".go").click(function() {
+    $(".smallmenu").hide();
+  });
+
+
+ 
+});
+ </script>
+
+ <script>
+
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+// certificates slide show
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!-- Add Google Maps -->
+
+<script type="text/javascript">
+function displayMap() {    
+                    document.getElementById('googleMap').style.display = "block";
+                    initMap(); 
+}
+
+function initMap() {
+  var tac = {lat: 37.3306496, lng: 127.1530311};
+  var map = new google.maps.Map(document.getElementById('googleMap'), {
+    zoom: 12,
+    center: tac
+  });
+  var marker = new google.maps.Marker({
+    position: tac,
+    map: map
+  });
+}
+
+
+// Google Map Location 
+/*var myCenter = new google.maps.LatLng(37.3306496, 127.1530311);
+
+function initMap() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);*/
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAYIxmVb9eX0TerXDNekEJ6mb8Hz4xkho&callback=initMap"></script>
+
+<script>
+//FAQ
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " question";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" question", "");
+    }
+}
+
+function closeInfo(e) {
+  var el = document.getElementById(e);
+
+  if (el.style.display = 'block') {
+    el.style.display = 'none';
+  }
+}
+//moving service button to the top of view port
+function serviceInfo(id) {
+
+
+  function findPos(obj) {
+    var curtop = 0;
+    
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    return [curtop] - 130;
+    }
+}
+  var i;
+ var service = document.getElementsByClassName('service');
+ var x = document.getElementById(id);
+ 
+
+  for(i=0; i < service.length; i++ ) {
+  if (service[i].style.display = 'block') {
+    service[i].style.display = 'none';
+  }
+ }
+
+
+
+ x.style.display = 'block';
+  window.scroll(0,findPos(document.getElementById(id)));
+}
+
+//change language navigation
+
+function showKor() {
+  document.getElementById('navigationEng').style.display = 'none';
+  document.getElementById('navigationKor').style.display = 'block';
+}
+
+
+function showEng() {
+  document.getElementById('navigationKor').style.display = 'none';
+  document.getElementById('navigationEng').style.display = 'block';
+}
+
+
+function showEngSmall() {
+  document.getElementById('smallnavKor').style.display = 'none';
+  document.getElementById('smallnavEng').style.display = 'block';
+}
+
+function showKorSmall() {
+  document.getElementById('smallnavEng').style.display = 'none';
+  document.getElementById('smallnavKor').style.display = 'block';
+}
+
+</script>
+
+
 </body>
 </html>

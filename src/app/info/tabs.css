@@ -1,0 +1,31 @@
+a {
+	margin: 25px;
+	color:black;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.nav {
+	max-width: 1200px !important;
+	margin: auto;
+}
+
+.nav-pills li a {
+	border-radius: 0;
+}
+
+.nav li.active a {
+  	color: black;
+  	border-bottom: 6px solid rgb(11, 112, 82);
+  	background-color: rgba(0, 0, 0, 0) !important;
+  	border-radius: 15px;
+  }
+
+
+ .nav li a:hover {
+ 	background-color: rgba(0, 0, 0, 0) !important;
+ 	border-bottom: 6px solid rgb(11, 112, 82);
+ }
+

@@ -1,0 +1,32 @@
+
+
+#background {
+  min-height: 100%;
+  background-position: center;
+    background-size: cover;
+    background-image: url('img/conifer-1853832_1920.jpg');
+    color: white;
+    padding-top: 100px;
+    }
+
+.main {
+  padding: 50px;
+}
+
+.w3-btn-block {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  background-color: rgba(116, 76, 196, 0.5) !important;
+
+}
+button:hover {
+  background-color: rgba(116, 76, 196, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  #background {
+    background-attachment: fixed;
+  }
+}

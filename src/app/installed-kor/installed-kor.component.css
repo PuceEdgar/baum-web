@@ -1,0 +1,38 @@
+
+
+#background2 {
+  min-height: 100%;
+  padding-top: 100px;
+  color: black;
+    }
+
+.container {
+  padding: 20px;
+ 
+}
+
+
+
+.w3-btn-block {
+  max-width: 150px;
+  background-color: rgb(11, 112, 82);
+}
+
+.w3-btn-block:hover {
+  background-color: green;
+}
+
+@media only screen and (max-width: 700px) {
+#background2 {
+  min-height: 100%;
+  padding: 10px;
+  background-image: none !important;
+ 
+  padding-bottom: 50px;
+  color:black;
+
+  
+}
+
+
+}
